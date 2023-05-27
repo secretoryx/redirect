@@ -1,64 +1,19 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>FLP</title>
+    <meta http-equiv="refresh" content="0;url=https://dev-featurelearning.pantheonsite.io/">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        .redirect-info {
-            margin-bottom: 20px;
-        }
-
-        .redirect-info strong {
-            font-weight: bold;
-        }
-
-        .redirect-message {
-            font-size: 20px;
+            display: none;
         }
     </style>
-    <script type="text/javascript">
-        function redirect() {
-            var redirectUrl = "https://dev-featurelearning.pantheonsite.io/;
-            var seconds = 5; // Adjust the number of seconds before redirection
-
-            document.getElementById("countdown").innerHTML = seconds;
-
-            var countdownInterval = setInterval(function() {
-                seconds--;
-                document.getElementById("countdown").innerHTML = seconds;
-
-                if (seconds <= 0) {
-                    clearInterval(countdownInterval);
-                    window.location.replace(redirectUrl);
-                }
-            }, 1000);
-        }
-
+    <script>
         window.onload = function() {
-            redirect();
+            window.location.href = "http://www.new-website.com";
         };
     </script>
 </head>
 <body>
-    <div class="redirect-info">
-        <h1></h1>
-        <p class="redirect-message">You will be redirected to a new page shortly.</p>
-        <p>Redirecting in <span id="countdown">5</span> seconds.</p>
-    </div>
-    <p>If the redirection does not occur, <a href="http://www.example.com/newpage">click here</a>.</p>
+    <h1>.</h1>
 </body>
 </html>
-
